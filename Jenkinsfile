@@ -8,12 +8,6 @@ pipeline {
 			}
 		}
 		
-		stage('Two') {
-			steps {
-				input('Do you want to proceed further?')
-			}
-		}
-		
 		stage('Build') {
             steps {
                 bat './gradlew build'
