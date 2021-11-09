@@ -20,11 +20,7 @@ pipeline {
             }
         }
         
-        stage('Check') {
-            steps {
-                bat './gradlew check'
-            }
-        }      
+       
 		
 		stage('Five') {
 			steps {
